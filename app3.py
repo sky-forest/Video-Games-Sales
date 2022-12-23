@@ -8,10 +8,10 @@ def app_3():
 
     df= pd.read_csv('Video_Games_Sales_new.csv')
 
-    st.subheader('게임 검색하기')
+    column_list = df.columns
 
-    game_name= st.text_input('찾는 게임의 이름을 입력하세요.')
-        if (df2['Game Title'].str.contains('wii', case= False) == True).any():
-        st.dataframe(df2[df2['Game Title'].str.contains('wii', case= False)])
+    selected_list1 = st.selectbox('확인할 데이터를 선택하세요.', column_list)
 
+    flg1= px.pie(df, values= df.groupby('Year').count(), names= df.index)
+    st.plotly_chart(flg1)
     
