@@ -7,7 +7,7 @@ from app4 import app_4
 
 
 def main():
-    st.title('Global Video Games List')
+    st.title('Global Video Games')
 
     menu = ['메인화면', '표 데이터', '게임 검색', '데이터 확인']
     choice = st.sidebar.selectbox('메뉴', menu)
