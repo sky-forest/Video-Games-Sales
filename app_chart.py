@@ -15,7 +15,7 @@ def app_4():
     st.image('https://img.freepik.com/premium-photo/top-view-a-gaming-gear_160097-847.jpg?w=2000')
 
     
-    if st.checkbox('수치 데이터 별로 정보 확인하기.'):
+    if st.checkbox('수치 데이터 별로 정보 확인하기'):
     
 
         column_list1 = df.columns[1:5]
