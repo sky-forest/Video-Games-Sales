@@ -1,9 +1,9 @@
 import streamlit as st
 
-from app1 import app_1
-from app2 import app_2
-from app3 import app_3
-from app4 import app_4
+from app_main import app_1
+from app_list import app_2
+from app_search import app_3
+from app_chart import app_4
 
 
 def main():
