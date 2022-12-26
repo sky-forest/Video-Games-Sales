@@ -15,7 +15,7 @@ def app_2():
 
 
 
-    if st.checkbox('수치 데이터 상위 10개 게임 확인하기'):
+    if st.checkbox('수치 데이터별 상위 10개 게임 확인하기'):
 
         select_list1= df.columns[5:]
 
